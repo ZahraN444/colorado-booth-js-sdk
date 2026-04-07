@@ -10,10 +10,10 @@ API for Markdown Notes app.
 Run the following command from your project directory to install the package from npm:
 
 ```bash
-npm install colorado-booth-sdk@1.0.6
+npm install colorado-booth-sdk@1.1.3
 ```
 
-For additional package details, see the [Npm page for the colorado-booth-sdk@1.0.6 npm](https://www.npmjs.com/package/colorado-booth-sdk/v/1.0.6).
+For additional package details, see the [Npm page for the colorado-booth-sdk@1.1.3 npm](https://www.npmjs.com/package/colorado-booth-sdk/v/1.1.3).
 
 ## Test the SDK
 
@@ -33,7 +33,7 @@ npm run test:coverage
 
 ## Initialize the API Client
 
-**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/client.md)
+**_Note:_** Documentation for the client can be found [here.](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/client.md)
 
 The following parameters are configurable for the API Client:
 
@@ -42,17 +42,17 @@ The following parameters are configurable for the API Client:
 | accessToken2 | `string` |  |
 | port | `string` | *Default*: `'80'` |
 | suites | `SuiteCodeEnum` | *Default*: `SuiteCodeEnum.Hearts` |
-| environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/README.md#environments) | The API environment. <br> **Default: `Environment.Testing`** |
+| environment | [`Environment`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/README.md#environments) | The API environment. <br> **Default: `Environment.Testing`** |
 | timeout | `number` | Timeout for API calls.<br>*Default*: `0` |
-| httpClientOptions | [`Partial<HttpClientOptions>`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/http-client-options.md) | Stable configurable http client options. |
+| httpClientOptions | [`Partial<HttpClientOptions>`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/http-client-options.md) | Stable configurable http client options. |
 | unstableHttpClientOptions | `any` | Unstable configurable http client options. |
-| basicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/basic-authentication.md) | The credential object for basicAuth |
-| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/custom-query-parameter.md) | The credential object for apiKey |
-| apiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/custom-header-signature.md) | The credential object for apiHeader |
-| oAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-client-credentials-grant.md) | The credential object for oAuthCCG |
-| oAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-authorization-code-grant.md) | The credential object for oAuthACG |
-| oAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The credential object for oAuthROPCG |
-| oAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-bearer-token.md) | The credential object for oAuthBearerToken |
+| basicAuthCredentials | [`BasicAuthCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/basic-authentication.md) | The credential object for basicAuth |
+| apiKeyCredentials | [`ApiKeyCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/custom-query-parameter.md) | The credential object for apiKey |
+| apiHeaderCredentials | [`ApiHeaderCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/custom-header-signature.md) | The credential object for apiHeader |
+| oAuthCCGCredentials | [`OAuthCCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-client-credentials-grant.md) | The credential object for oAuthCCG |
+| oAuthACGCredentials | [`OAuthACGCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-authorization-code-grant.md) | The credential object for oAuthACG |
+| oAuthROPCGCredentials | [`OAuthROPCGCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-resource-owner-credentials-grant.md) | The credential object for oAuthROPCG |
+| oAuthBearerTokenCredentials | [`OAuthBearerTokenCredentials`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-bearer-token.md) | The credential object for oAuthBearerToken |
 
 The API client can be initialized as follows:
 
@@ -125,7 +125,7 @@ const fileContent = fs.readFileSync(absolutePath, 'utf-8');
 const client = Client.fromJsonConfig(fileContent);
 ```
 
-See the [Configuration-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/configuration-based-client-initialization.md) section for details.
+See the [Configuration-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/configuration-based-client-initialization.md) section for details.
 
 ### Environment-Based Client Initialization
 
@@ -147,7 +147,7 @@ if (fs.existsSync(absolutePath)) {
 const client = Client.fromEnvironment(process.env);
 ```
 
-See the [Environment-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/environment-based-client-initialization.md) section for details.
+See the [Environment-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/environment-based-client-initialization.md) section for details.
 
 ## Environments
 
@@ -164,35 +164,35 @@ The SDK can be configured to use a different environment for making API calls. A
 
 This API uses the following authentication schemes.
 
-* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/basic-authentication.md)
-* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/custom-query-parameter.md)
-* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/custom-header-signature.md)
-* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-client-credentials-grant.md)
-* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-authorization-code-grant.md)
-* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-resource-owner-credentials-grant.md)
-* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/auth/oauth-2-bearer-token.md)
+* [`basicAuth (Basic Authentication)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/basic-authentication.md)
+* [`apiKey (Custom Query Parameter)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/custom-query-parameter.md)
+* [`apiHeader (Custom Header Signature)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/custom-header-signature.md)
+* [`OAuthCCG (OAuth 2 Client Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-client-credentials-grant.md)
+* [`OAuthACG (OAuth 2 Authorization Code Grant)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-authorization-code-grant.md)
+* [`OAuthROPCG (OAuth 2 Resource Owner Credentials Grant)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-resource-owner-credentials-grant.md)
+* [`OAuthBearerToken (OAuth 2 Bearer token)`](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/auth/oauth-2-bearer-token.md)
 * `CustomAuth (Custom Authentication)`
 
 ## List of APIs
 
-* [Authentication](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/controllers/authentication.md)
+* [Authentication](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/controllers/authentication.md)
 
 ## SDK Infrastructure
 
 ### Configuration
 
-* [HttpClientOptions](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/http-client-options.md)
-* [RetryConfiguration](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/retry-configuration.md)
-* [ProxySettings](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/proxy-settings.md)
-* [Configuration-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/configuration-based-client-initialization.md)
-* [Environment-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/environment-based-client-initialization.md)
+* [HttpClientOptions](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/http-client-options.md)
+* [RetryConfiguration](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/retry-configuration.md)
+* [ProxySettings](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/proxy-settings.md)
+* [Configuration-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/configuration-based-client-initialization.md)
+* [Environment-Based Client Initialization](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/environment-based-client-initialization.md)
 
 ### HTTP
 
-* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/http-request.md)
+* [HttpRequest](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/http-request.md)
 
 ### Utilities
 
-* [ApiResponse](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/api-response.md)
-* [ApiError](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.0.6/doc/api-error.md)
+* [ApiResponse](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/api-response.md)
+* [ApiError](https://www.github.com/ZahraN444/colorado-booth-js-sdk/tree/1.1.3/doc/api-error.md)
 
